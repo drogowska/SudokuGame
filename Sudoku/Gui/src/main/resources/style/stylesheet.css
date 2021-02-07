@@ -1,0 +1,35 @@
+.sudoku-grid-border{
+    -fx-border-color: black ;
+    -fx-border-width: 1 ;
+    -fx-padding: 3 ;
+}
+
+.text-field:disabled{
+    -fx-opacity: 1;
+    -fx-font-weight: bold;
+    -fx-background-color: darkslategrey;
+}
+
+.text-field:focused{
+    -fx-background-color: darksalmon;
+}
+
+.polish-flag {
+    -fx-background-image: url("images/polish_flag.png");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+.us-flag {
+    -fx-background-image: url("images/us_flag.png");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+.radio-button {
+    -fx-padding: 0 40 0 40;
+}
+.nationalization-hbox {
+    -fx-alignment: center;
+    -fx-padding: 80 0 -10 0;
+}

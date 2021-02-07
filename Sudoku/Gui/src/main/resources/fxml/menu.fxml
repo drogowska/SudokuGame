@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+   <children>
+      <Label fx:id="labelSudoku" layoutX="211.0" layoutY="96.0" text="Sudoku">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="easyButton" layoutX="214.0" layoutY="182.0" mnemonicParsing="false" onAction="#onEasyButtonClick" prefHeight="39.0" prefWidth="73.0" text="%Easy" />
+      <Button fx:id="mediumButton" layoutX="214.0" layoutY="265.0" mnemonicParsing="false" onAction="#onMediumButtonClick" prefHeight="39.0" prefWidth="73.0" text="%Medium" />
+      <Button fx:id="hardButton" layoutX="214.0" layoutY="351.0" mnemonicParsing="false" onAction="#onHardButtonClick" prefHeight="39.0" prefWidth="73.0" text="%Hard" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="500.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="%Options">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#onExitButtonClick" text="%Close" />
+                <MenuItem mnemonicParsing="false" onAction="#loadSudokuFromFile" text="%LoadFromFile" />
+                <MenuItem mnemonicParsing="false" text="%LoadFromDataBase" onAction="#LoadFromDataBase" />
+                <MenuItem mnemonicParsing="false" onAction="#printAuthors" text="%PrintAuthors" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+       <HBox layoutX="157.0" layoutY="424.0" prefHeight="55.0" prefWidth="200.0" styleClass="nationalization-hbox">
+           <children>
+              <RadioButton fx:id="polishButton" layoutX="117.0" layoutY="424.0" mnemonicParsing="false" onAction="#changeLanguage" styleClass="radio-button">
+                  <graphic>
+                      <Label prefHeight="17.0" prefWidth="62.0" text="%Polish" />
+                  </graphic>
+                  <toggleGroup>
+                      <ToggleGroup fx:id="group" />
+                  </toggleGroup>
+              </RadioButton>
+               <RadioButton fx:id="englishButton" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="17.0" prefWidth="75.0" styleClass="radio-button" toggleGroup="$group">
+                   <graphic>
+                      <Label prefHeight="17.0" prefWidth="62.0" text="%English" />
+                   </graphic></RadioButton>
+           </children>
+       </HBox>
+   </children>
+</AnchorPane>
