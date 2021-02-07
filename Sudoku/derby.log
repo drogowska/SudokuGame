@@ -1,0 +1,19 @@
+----------------------------------------------------------------
+Wed Jan 20 21:45:33 CET 2021:
+ Uruchamianie wersji The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585) systemu Derby: instancja a816c00e-0177-218b-98e4-00000b4342e8
+w katalogu bazy danych E:\an_pn_1145_04\Sudoku\SudokuDB jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.2+12-46
+user.dir=E:\an_pn_1145_04\Sudoku
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Uruchomiono program ³aduj¹cy klasê bazy danych - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Jan 20 22:14:26 CET 2021: Shutting down Derby engine
+----------------------------------------------------------------
+Wed Jan 20 22:14:26 CET 2021:
+Wy³¹czanie instancji a816c00e-0177-218b-98e4-00000b4342e8
+----------------------------------------------------------------
